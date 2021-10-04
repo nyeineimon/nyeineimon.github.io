@@ -49,6 +49,149 @@
         console.log(x);
         x = 200;
         console.log(x);
+
+        let y = 12;
+        if(y==12){
+            var num1 = 12;
+            let num2 = 12;
+        }
+        console.log(num1+3);
+        // console.log(num2+3); 
+
+        // String
+        let myNameis = "Nyein Ei Mon";
+        console.log(myNameis.length);
+        console.log("My Name is"+myNameis);
+        console.log(myNameis.toUpperCase());
+        console.log(myNameis.toLowerCase());
+        console.log(myNameis[0]);
+        console.log(myNameis.substring(0,5));
+        let hi = ' Hello How Are You? ';
+        console.log(hi.trim());
+
+        // search()
+        let ser = "JavaScript is Easy";
+        let res = ser.search("Easy");
+        console.log(res);
+
+        // replace()
+        let rep = "I go to Yangon";
+        let go = rep.replace("Yangon","Mandalay");
+        console.log(go);
+
+        // Backtick sign
+        let bats = `Hello this is
+                    JavaScript Lesson`;
+        console.log(bats);
+        let firstName = "Nyein";
+        console.log(`First Name is ${firstName}`);
+        console.log(`The addition result is ${1+2+3}`);
+
+        console.log("My Name is Nyein Ei Mon.\nI Live in Bagan.");
+        console.log("\tHello JS");
+        console.log('I\'m a Programmer');
+
+        // Operator
+        let three = 1+2; // Addition Operator
+        let four = three + 1;
+        console.log(three);
+        console.log(four);
+
+        let threeOne = 'three'+1;
+        console.log(threeOne);
+
+        let first_name = "Nyein Ei ";
+        let last_name = "Mon";
+        let fullname = first_name + last_name;
+        console.log(fullname);
+        console.log(first_name += "Mon");
+
+        let two =4-2; // Substration Operator
+        console.log(two);
+
+        let result = 20/5; // Division Operator
+        let result1 = 20/7;
+        let result2 = 1/0;
+        console.log(result);
+        console.log(result1);
+        console.log(result2);
+
+        let result3 = 20%5; // Remainder Operator
+        let result4 =20%7;
+        let result5 = 1%0;
+        console.log(result3);
+        console.log(result4);
+        console.log(result5);
+
+        let mul = 1*2; // Multiplaction Operator
+        let mul1 = -1*2;
+        console.log(mul);
+        console.log(mul1);
+
+        let mul2 = 2**2;
+        let mul3 = 2**8;
+        console.log(mul2);
+        console.log(mul3);
+
+        // Precedence
+        // * /  %
+        // + -
+        // =
+        let total = 1 * 2 + 5 / 2; //2+2.5%2 -> 2.5
+        console.log(total);
+
+        // Comparisons
+        let n = 12;
+        console.log(n<15); // Less than
+        console.log(n>10); // greater than
+        console.log(n<=12); // less than or equal
+        console.log(n>=12); // greater than or equal
+        console.log(n=="12"); // ignor datatype
+        console.log(n==="12"); // also check datatype
+        console.log(n!="12"); // ignor datatype
+        console.log(n!=="12"); // also check datatype
+
+        // Condition
+        // if
+        // if(true){
+        //    do something
+        // }
+
+        let input1 = prompt("Enter Number One");
+        if(input1<=50){
+            alert("Number One is Less Than or Equal 50");
+        }
+
+        // else
+        // if (true) {
+        //   do something
+        // } else {
+
+        // }
+
+        let input2 = prompt("Enter Number Two");
+        if(input2<=50){
+            alert("Number Two is Less Than or Equal 50");
+        }else {
+            alert("Number Two is Greater Than 50");
+        }
+
+        // else if
+        // if (condition) {
+
+        // } else {
+
+        // }
+        
+        let input3 = prompt("Enter Number Three");
+        if(input3<50){
+            alert("Number Three is Less Than 50");
+        }else if(input3==50){
+            alert("Number Three is Equal to 50");
+        }else{
+            alert("Number Three is Greater Than 50");
+        }
+        
     </script>
 </body>
 </html>
