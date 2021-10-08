@@ -28,11 +28,17 @@
                 let pass = document.getElementById("exam_result");
                 // console.log(pass);
                 pass.innerHTML = "<h1> This Student is Pass!</h1>";
-            }else{
+                if(flutter>=80 || java>=80 || js>=80){
+                let distinction = document.getElementById("exam_result");
+                //console.log(distinction);
+                distinction.innerHTML= "<h1> This Student is Pass with Distinction!</h1>";
+            }
+                }else{
                 let fail = document.getElementById("exam_result");
                 // console.log(fail);
                 fail.innerHTML = "<h1> This Student is Fail!</h1>";
             }
+            
         }
     </script>
 </body>
