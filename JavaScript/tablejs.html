@@ -11,10 +11,36 @@
     <br><br>
     <table border="1" cellspacing="0" cellpadding="10">
         <thead>
-            <th>No.</th>
-            <th>Name</th>
-            <th>Age</th>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
         </thead>
+        <tbody id="tbody">
+        </tbody>
     </table>
+    <script>
+        function showData(){
+            let data = [
+                {name: 'Nyein Ei Mon',age:'25'},
+                {name: 'Mg Mg',age:'25'},
+            ]
+            console.log(data);
+            let tbody = document.querySelector('#tbody');
+            let myData ='';
+            let i = 1;
+
+        for (const value of data){
+           // console.log(value.name);
+           myData += `<tr>
+                        <td>${i++}</td>
+                        <td>${value.name}</td>
+                        <td>${value.age}</td>
+            </tr>`;
+        }
+        tbody.innerHTML = myData;
+    }
+    </script>
 </body>
 </html>
