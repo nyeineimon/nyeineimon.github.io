@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Table Assignment</title>
+    <style>
+        
+            body{
+            background-color: cyan;
+        }
+        .cointer{
+            overflow: hidden;
+        }
+        .tab{
+            float: left;
+        }
+        .tab-2{
+            margin-left: 50px;
+        }
+        .tab-2 input{
+            display: block;margin-bottom: -10px;
+        }
+    
+
+    </style>
+    
+</head>
+<body>
+        <h1>JS Table Lesson</h1>
+        <div class="container">
+            <div class="tab tab-1">
+                    <table border="1" id="table" cellspacing="0" cellpading="15" width="100%">
+                        <tr>
+                            <th>No.</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone No.</th>
+                        </tr>
+                    </table>
+            </div>
+            
+        </div>
+        <table>
+            <tr>
+                <div class="tab tab-2">
+                    <label for="name">Name :</label>
+                    <input type="text" name="" id="name" placeholder="Eg. Mg Mg" required><br><br>
+                    <label for="email">Email :</label>
+                    <input type="number" name="" id="email" placeholder="@gmail.com"><br><br>
+                    <label for="phone">Phone No. :</label>
+                    <input type="number" name="" id="phone"><br><br>
+    
+                    <button onclick="addTableRow()">Add</button>
+                    <button onclick="editTableSelectedRow()">Edit</button>
+                    <button onclick="removeSelectedRow()">Remove</button>
+                </div>
+            </tr>
+        </table>
+
+        <script>
+            let noCount = 1;
+            let rIndex,
+            table = document.getElementById("table");
+            function addTableRow(){
+                let newRow = table.insertRow(table.length);
+                    cell1 = newRow.insertCell(0);
+                    cell2 = newRow.insertCell(1);
+                    cell3 = newRow.insertCell(2);
+                    cell4 = newRow.insertCell(3);
+                    
+                    
+                    name = document.getElementById("name").value;
+                    email = document.getElementById("email").value;
+                    phone = document.getElementById("phone").value;
+
+                    cell1.innerHTML = name;
+                    cell2.innerHTML = email;
+                    cell3.innerHTML = phone;
+
+                    selectedRowToInput()
+
+            }
+            function selectedRowToInput() {
+                    
+                    for(let i = 1; i < table.rows.length; i++){
+                        table.rows[i].onclick = function(){
+                            rIndex = this.rowIndex;
+                            document.getElementById("name").value = this.cells[0].innerHTML;
+                            document.getElementById("email").value = this.cells[1].innerHTML;
+                            document.getElementById("phone").value = this.cells[2].innerHTML;
+                        }
+                        
+                    }
+            }
+            selectedRowToInput()
+            function editTableSelectedRow(){
+                let name = document.getElementById("name").value;
+                    email = document.getElementById("email").value;
+                    phone = document.getElementById("phone").value;
+
+                    table.rows[rIndex].cells[0].innerHTML = name;
+                    table.rows[rIndex].cells[1].innerHTML = email;
+                    table.rows[rIndex].cells[2].innerHTML = phone;
+            }
+
+            function removeSelectedRow(){
+                table.deleteRow(rIndex);
+            }
+
+           
+          
+        </script>
+         
+       
+ 
+      
+</body>
+</html>
