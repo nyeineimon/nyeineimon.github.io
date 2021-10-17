@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Table 1</title>
+</head>
+<body>
+    <form>
+        <label for="name">Name :</label>
+        <input type="text" name="name" id="name" placeholder="Eg: Mg Mg">
+        <br><br>
+        <label for="age">Name :</label>
+        <input type="number" name="age" id="age">
+        <br><br>
+        <button type="button" onclick="showData()">Add Data</button>
+        <br><br>
+    </form>
+    <table border="1" cellspacing="0" cellpadding="15">
+        <thead>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Age</th>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <script>
+          let i = 1;    
+        function showData(){
+          
+            let name = document.getElementById("name").value;
+            let age = document.getElementById("age").value;
+            let tbody = document.getElementById("tbody");
+
+            tbody.innerHTML += `<tr>
+                        <td>${i++}</td>
+                        <td>${name}</td>
+                        <td>${age}</td>
+                    </tr>`
+        }
+
+    </script>
+</body>
+</html>

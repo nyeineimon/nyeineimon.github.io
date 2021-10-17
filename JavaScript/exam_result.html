@@ -25,9 +25,9 @@
             let js=document.getElementById("javascript").value;
 
             if(flutter >= 50 && java >= 50 && js >= 50){
-            if (flutter>80 || java >80 || js > 80 ) {
-                let distinction = document.getElementById("exam_result");
-                distinction.innerHTML="<h1>This Student Pass with Distinction!</h1>"
+            if (flutter >= 80 || java >= 80 || js >= 80 ) {
+                let dis = document.getElementById("exam_result");
+                dis.innerHTML="<h1>This Student is Pass with Distinction!</h1>"
             }else{
                 let pass = document.getElementById("exam_result");
                 //console.log(pass);
