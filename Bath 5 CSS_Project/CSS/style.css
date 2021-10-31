@@ -1,0 +1,418 @@
+/* start nav */
+*{
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+.background{
+    background-color: #16191c;
+}
+
+.logo{
+    width: 110px;
+    height: 70px;
+    display: block;
+    margin-left: 30px;
+}
+
+.brand_name{
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+    font-family: great;
+}
+
+@font-face {
+    font-family: great;
+    src: url(../GreatVibes/GreatVibes-Regular.ttf);
+}
+
+.nav_brand{
+    display: inline-block;
+}
+
+.background ul{
+    float: right;
+}
+
+.background ul li{
+    display: inline-block;
+    color: white;
+    margin-right: 40px;
+    padding-top: 30px;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+   
+}
+
+.background ul li:hover,.background a.brand_name:hover{
+    color: gold;
+    transform: translate(4px,-5px);
+    
+}
+
+
+/* end nav */
+
+/* start Background */
+.background_img{
+    background-image: url(../images/backgroundphoto.jpg);
+    height: 550px;
+   
+}
+
+
+.beerbar{
+    position: absolute;
+    top: 270px;
+    left: 370px;
+    color: gold;
+    font-family: great;
+    font-size: 40px;
+}
+.read{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid gold;
+    background-color: black;
+    color: white;
+    margin-left: 90px;
+}
+/* end Background */
+.grid{
+    display: grid;
+    grid-template-columns: 600px auto auto;
+}
+
+div.grid .grid_one{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: left;
+    padding: 70px 50px 0px 90px;
+}
+
+.grid div{
+    border: 4px solid #212326;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.perfect{
+    color: gold;
+    font-size: 23px;
+}
+
+.readmore{
+    background-color: yellow;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+div.grid .grid_other{
+    padding: 30px 50px 30px 50px;
+}
+/* start friend with */
+.boxshow img{
+    width: 500px;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: 90px;
+    border: 1px solid black;
+    border-radius: 3px;
+    float: left;
+}
+
+.boxshow_text{
+    position: relative;
+    top: 100px;
+    left: 80px;
+    width: 85%;
+    text-align: justify;
+    
+}
+/* end with friend */
+.clear{
+    clear: both;
+}
+
+/* start beer  */
+.black_background{
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+}
+
+.black_background_text{
+    width: 35%;
+    position: relative;
+    top: 80px;
+    left: 90px;
+    float: left;
+}
+
+.black_background img{
+    margin-top: 50px;
+    margin-left: 170px;
+    
+}
+.master{
+    font-variant: small-caps;
+    line-height: 50px;
+}
+
+.white_background_text{
+    width: 35%;
+    margin-left: 170px;
+    margin-top: 50px;
+    float: left;
+}
+
+.white_background_right{
+    position: relative;
+    top: 50px;
+    width: 85%;
+    left: 100px;
+}
+
+.footer{
+    height: 100px;
+    background-color: black;
+    color: white;
+    margin-top: 60px;
+}
+
+footer.footer p{
+    display: inline-block;
+    margin-left: 90px;
+    margin-top: 40px;
+}
+
+footer.footer a{
+    float: right;
+    margin-right: 50px;
+    margin-top: 38px;
+}
+.word_spacing{
+    word-spacing: 4px;
+    font-size: 18px;
+}
+div p{
+    font-size: 18px;
+}
+.more_perfect{
+    color: gold;
+}
+/* start contact */
+
+.contact_body_background{
+    background-image: url(../images/images.jfif);
+    margin-bottom: -60px;
+    background-repeat: no-repeat;
+    height: 470px;
+    background-size: 100vw;
+}
+.contact_flex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.contact{
+    color: black;
+    text-align: center;
+    font-variant: small-caps;
+    padding-top: 10px;
+    
+    
+}
+
+
+.contact_form{
+    margin: 10px;
+    color: rgb(214, 187, 31);
+    border-radius: 10px;
+    font-size: 20px;
+    width: 370px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(49, 48, 48, 0.63);
+    display: inline-block
+
+    
+}
+input[type="text"],input[type="email"]{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(66, 65, 65, 0.644);
+    border: none;
+    padding: 5px;
+    color: white;
+    font-size: 16px;
+}
+.textarea{
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    background-color: rgba(66, 65, 65, 0.644);
+    border: none;
+    padding: 5px;
+    color: #fff;
+    font-size: 18px;
+}
+.input_form{
+    margin: 15px;
+}
+.send_message{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color:#fff;
+    margin-left: 20px;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+.send_message:hover{
+    background-color: gold;
+    
+}
+
+.contact_icon{
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    margin: 40px 0px;
+    display: block;
+    transition: 0.5s;
+}
+.contact_icon:hover{
+    background-color: gold;
+}
+
+.contact2_form{
+   
+    color: rgb(214, 187, 31);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(49, 48, 48, 0.63);
+    display: inline-block;
+    vertical-align: bottom;
+}
+/* end contact page */
+
+/* start about page */
+.about_background_img{
+    background-image: url(../images/images.jfif);
+    height: 470px;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    margin-bottom: -60px;
+    
+}
+.title{
+    text-align: center;
+    font-variant: small-caps;
+    padding-top: 20px;
+}
+.paragraph{
+    text-align: justify;
+    font-size: 18px;
+    width: 90%;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.about_list{
+    
+    width: 300px;
+    
+}
+.about_list li{
+    background-color: rgba(17, 17, 17, 0.363);
+    padding: 10px 15px;
+    font-size: 18px;
+    margin: 5px;
+    color: gold;
+    transition: 0.5s;
+    list-style: none;
+   
+}
+.about_list li:hover{
+    border-left:    8px solid black;
+}
+.about_list a{
+    text-decoration: none;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* end about page   */
+
+/* start shop page */
+
+.shop_background_img{
+    background-image: url(../images/jabeerwocky-craft-beer.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+.craft_shop{
+    color: #fff;
+    padding-top: 70px;
+    padding-left: 90px;
+}
+.craft_beer_shop{
+    margin-bottom: 30px;
+    
+}
+.vos{
+    margin-bottom: 30px;
+    font-variant: small-caps;
+}
+.craft_shop p{
+width: 500px;
+}
+.dolor{
+    margin-bottom: 30px;
+}
+.beer_shop{
+    padding-bottom: 50px;
+}
+.beershop{
+    padding: 30px 90px;
+    width: 100%;
+    text-align: left;
+    background-color: rgba(223, 219, 219, 0.651);
+    margin-bottom: -60px;
+}
+.votre_style{
+    text-align: center;
+    font-variant: small-caps;
+    padding-bottom: 10px;
+}
+.head th a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.tbody td a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+.head th a:hover{
+    color: brown;
+}
+.tbody td a:hover{
+    font-weight: bold;
+}
